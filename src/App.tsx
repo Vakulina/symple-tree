@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Tree from './component/Tree/Tree';
 
 function App() {
   return (
     <div className="App">
-5555
+<Tree/>
     </div>
   );
 }
