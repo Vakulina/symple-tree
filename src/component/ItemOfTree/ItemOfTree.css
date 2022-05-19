@@ -1,0 +1,30 @@
+ul{
+  list-style: none;
+  margin: 0.5rem 0;
+}
+li{
+  font: bold 1.5rem sans-serif;
+  line-height: 1.5rem;
+  padding-left: 20px;
+}
+li li{
+  font: 600 1rem sans-serif;
+  line-height: 1.2rem;
+}
+li li li{
+  font: 200 0.8rem sans-serif;
+  line-height: 1rem;
+}
+ul .item_closed{
+background-image: url('../images/arrow_to-right.svg');
+background-repeat: no-repeat;
+background-position: 5px 0.2em;
+background-size: 10px 10px;
+
+}
+ul .item_opened{
+  background-image: url('../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 5px 0.2em;
+  background-size: 10px 10px;
+}

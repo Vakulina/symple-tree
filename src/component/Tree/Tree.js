@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemOfTree from '../ItemOfTree/ItemOfTree';
-import fetchDataList from '../../utiles/fetchDataList'
+import './Tree.css'
 
 export default function Tree() {
   const [list, setList] = useState({})
@@ -17,7 +17,7 @@ export default function Tree() {
   
   return (
     <>
-      <ItemOfTree item={list} isDisplayChildren={true} />
+      <ItemOfTree item={list} isDisplayChildren={true} className={''} />
     </>
   )
 }
