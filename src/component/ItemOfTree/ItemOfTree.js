@@ -4,16 +4,16 @@ import "./ItemOfTree.css"
 export default function ItemOfTree({ item, onClick, isDisplayChildren, className }) {
   const [childrenList, setChildrenList] = useState(null) //элементы списка
   const [visibilityChildren, setVisibilityChildren] = useState([]); //состояние показа подсписка для каждого элемента открытого списка
-  //const className = !!displayChildren&&childrenList? 'item_opened' : 'item_closed'
-  //const [itemClassName, setItemClassName]= useState('')
 
-  const handleClick = (e, index) => { //свернуть/развернуть 
+  const handleClick = (e, i, index) => { //свернуть/развернуть 
     e.stopPropagation();
+    console.log(childrenList,visibilityChildren,i)
+    if (i['childNodes']){
+
     const newVisibilityChildren = [...visibilityChildren];
     newVisibilityChildren[index] = !visibilityChildren[index];
     setVisibilityChildren(newVisibilityChildren);
-    console.log(newVisibilityChildren)
-    // (!newVisibilityChildren[index])? setItemClassName('item_opened'): setItemClassName('item_closed')
+    }
   }
 
   useEffect(() => {
@@ -32,6 +32,15 @@ export default function ItemOfTree({ item, onClick, isDisplayChildren, className
   let displayChildren = null;
 
   if ((childrenList != null) && (isDisplayChildren)) {
+    const className = (index, i) => {
+      if (visibilityChildren[index]) {
+        return 'item_opened'
+      }
+      else if (!visibilityChildren[index] && i["childNodes"]) {
+        return 'item_closed'
+      }
+    }
+
     displayChildren = (
       <ul >
         {childrenList.map((i, index) => (
@@ -39,15 +48,14 @@ export default function ItemOfTree({ item, onClick, isDisplayChildren, className
             item={i}
             key={index}
             isDisplayChildren={visibilityChildren[index]}
-            onClick={(e) => handleClick(e, index)}
-            className={(visibilityChildren[index] && 'item_opened') || ((!visibilityChildren[index] && i["childNodes"]) && 'item_closed')}
+            onClick={(e) => handleClick(e, i, index)}
+            className={className(index, i)}
           />
         ))}
       </ul>
     );
   }
 
-  console.log(childrenList)
 
   return (
     <li onClick={onClick} className={className}>
