@@ -5,19 +5,24 @@ import './Tree.css'
 export default function Tree() {
   const [list, setList] = useState({})
   const items=require('../../test.json')
+
   
+  
+
   useEffect(() => {
    /*
     fetchDataList()
     .then((list)=>{
      setList(list)})*/
      setList(items)
+     console.log(items.childNodes)
   }, [])
 
   
   return (
     <>
-      <ItemOfTree item={list} isDisplayChildren={true} className={''} />
+      <ItemOfTree item={list} isDisplayChildren={true} />
+     
     </>
   )
 }
