@@ -4,9 +4,11 @@ ul{
   cursor: pointer;
 }
 li{
+  box-sizing: border-box;
   font: bold 1.5rem sans-serif;
   line-height: 1.5rem;
   padding-left: 20px;
+  overflow: hidden;
 }
 
 li li{
