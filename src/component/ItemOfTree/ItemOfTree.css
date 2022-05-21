@@ -17,7 +17,7 @@ li li{
 }
 li li li{
   font: 200 0.8rem sans-serif;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 ul {
   min-width: max-content;
@@ -25,21 +25,22 @@ ul {
 ul .item_closed{
 background-image: url('../images/arrow_to-right.svg');
 background-repeat: no-repeat;
-background-position: 5px 0.2em;
+background-position: 5px 0.3em;
 background-size: 10px 10px;
 
 }
 ul .item_opened{
   background-image: url('../images/arrow.svg');
   background-repeat: no-repeat;
-  background-position: 5px 0.2em;
+  background-position: 5px 0.3em;
   background-size: 10px 10px;
 }
 span{
-  padding: 3px 5px;
+  box-sizing: border-box;
+  padding: 2px 5px;
 }
 .active span{
   background-color: grey;
   color: white;
-  border-radius: 2px;
+  border-radius: 5px;
 }

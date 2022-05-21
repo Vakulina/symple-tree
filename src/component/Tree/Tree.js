@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 import ItemOfTree from '../ItemOfTree/ItemOfTree';
 import './Tree.css'
-import bellImg from '../images/bell.png'
+import bellImg from '../images/bell.png';
+import fetchDataList from "../../utiles/fetchDataList";
 
 
 function Tree() {
   const [list, setList] = useState({})
-  const items = require('../../test1.json')
   const [activeItem, setActiveItem] = useState('')
 
   useEffect(() => {
-    /*
      fetchDataList()
      .then((list)=>{
-      setList(list)})*/
-    setList(items)
+      setList(list)})
   }, [])
 
   const handleClick = (id) => {

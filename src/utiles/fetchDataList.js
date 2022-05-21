@@ -1,4 +1,4 @@
-const URL = 'https://cors-anywhere.herokuapp.com/https://pastebin.com/raw/E0DcgH2d'
+const URL = 'http://178.154.245.149/test/'
 
  export default async function fetchDataList() {
     try {
