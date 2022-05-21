@@ -1,0 +1,47 @@
+.tree {
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  min-width: 300px;
+  max-width: max-content;
+  padding: 15px 25px 0 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-left: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  min-height: 50vh;
+}
+
+.tree::before {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 23px;
+  width: 9px;
+  height: 9px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.tree::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 4px;
+  height: 4px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.tree img{
+  position: absolute;
+  top:20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+}
+.tree-name{
+  position: absolute;
+  top:20px;
+  right: 60px;
+  color: rgb(204, 207, 210, .5);
+}

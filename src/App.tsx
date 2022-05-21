@@ -1,10 +1,11 @@
 import React from 'react';
 import Tree from './component/Tree/Tree';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-<Tree/>
+    <div className="app">
+      <Tree />
     </div>
   );
 }

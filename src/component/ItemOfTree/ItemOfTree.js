@@ -53,7 +53,7 @@ function ItemOfTree({ item, isDisplayChildren, activeItem, handleMarkingItem, cl
                 key={i.id}
                 isDisplayChildren={visibilityChildren[index]}
                 onClick={(e) => handleClick(e, i, index)}
-                className={`${getClassName(index, i)} }`}
+                className={`${getClassName(index, i)}`}
                 handleMarkingItem={handleMarkingItem}
                 activeItem={activeItem}
               />
@@ -65,8 +65,10 @@ function ItemOfTree({ item, isDisplayChildren, activeItem, handleMarkingItem, cl
   }
   return (
     <li onClick={onClick} className={className}  >
+      <span>
       {item && item["title"]}
       {renderDisplayChildren()}
+      </span>
     </li>
   );
 }
