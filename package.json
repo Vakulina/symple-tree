@@ -1,4 +1,5 @@
-{  "name": "lit-test",
+{ "homepage": "http://178.154.245.149/test/front/", 
+  "name": "lit-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
