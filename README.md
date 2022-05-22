@@ -24,6 +24,6 @@
 
 ### Проект завершен
 
-#### :link: Деплой : https://project-mesto.nomoredomains.work/
+#### :link: Деплой : http://178.154.245.149/test/front/
 #### :link: Сервер для получения данных : http://178.154.245.149/test/
 
