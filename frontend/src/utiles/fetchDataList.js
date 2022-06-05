@@ -1,4 +1,4 @@
-const URL = 'http://178.154.245.149/test/'
+const URL = 'https://serene-journey-39933.herokuapp.com/'
 
  export default async function fetchDataList() {
     try {

@@ -10,8 +10,6 @@
 #### Backend
 Простой сервер для раздачи JSON-файла с данными для отображения
 1. Node.js
-2. Express
-3. nginx
 
 #### Frontend
 1. React.js (Create React App)
@@ -25,5 +23,5 @@
 ### Проект завершен
 
 #### :link: Деплой : http://178.154.245.149/test/front/
-#### :link: Сервер для получения данных : http://178.154.245.149/test/
+#### :link: Сервер для получения данных : https://serene-journey-39933.herokuapp.com/
 
