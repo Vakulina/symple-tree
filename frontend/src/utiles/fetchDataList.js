@@ -1,4 +1,4 @@
-const URL = 'https://serene-journey-39933.herokuapp.com/'
+const URL = 'https://tree-9egp.onrender.com/'
 
  export default async function fetchDataList() {
     try {
