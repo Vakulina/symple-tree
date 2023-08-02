@@ -22,6 +22,6 @@
 
 ### Проект завершен
 
-#### :link: Деплой : [https://vakulina.github.io/symple-tree/ ](https://simple-tree.onrender.com/)
+#### :link: Деплой : https://simple-tree.onrender.com/
 #### :link: Сервер для получения данных : https://serene-journey-39933.herokuapp.com/
 
